@@ -1,0 +1,111 @@
+.weather-container{
+    display: grid;
+    flex: 1;
+    border: solid;
+    border-width: 1px;
+    background-color: #1D84B5;
+    /* background-image: url("https://images.pexels.com/photos/2528324/pexels-photo-2528324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+    grid-area: wt;
+    grid-template: 
+        "wtloc wtloc wtloc wtloc inf inf inf inf inf" 1fr
+        "wtloc wtloc wtloc wtloc inf inf inf inf inf" 1fr
+    ;
+}
+
+.weather-location{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    border: solid;
+    border-width: 1px;
+    grid-area: wtloc;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.weather-location-draw-container{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    border: solid;
+    border-width: 1px;
+}
+
+.weather-location-draw{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: solid;
+    border-width: 1px;
+}
+
+.weather-location-draw-info-container{
+    display: flex;
+    flex: 1;
+    border: solid;
+    border-width: 1px;
+    background: #00000077;
+}
+
+.form-container{
+    display: flex;
+    width: 70%;
+    border: solid;
+    border-width: 1px;
+    background: gray;
+}
+
+.search-input-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: solid;
+    border-width: 1px;
+    background: gray;
+}
+
+.weather-search-input{
+    min-height: 40px;
+}
+
+.weather-area-input{
+    flex: 1;
+}
+
+.weather-information-container{
+    display: flex;
+    flex:1;
+    border: solid;
+    border-width: 1px;
+    grid-area: inf;
+    align-items: center;
+}
+
+.weather-information-box{
+    display: flex;
+    height: 75%;
+    width: 100%;
+    border: solid;
+    border-width: 1px;
+    background: gray;
+    grid-area: inf;
+}
+
+.weather-information-content{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+}
+
+.information-area{
+    display: flex;
+    flex:1;
+    overflow: scroll;
+}
+
+.information-column{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+}

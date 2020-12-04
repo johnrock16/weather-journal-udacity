@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./css/index.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./css/globalStyles.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./css/header.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./css/weather.css'>
+  <script src="js/weatherAPI.js"></script>
+</head>
+<body>
+  <div class="main-container">
+    <header class="header">
+      <div class="header-title">
+          <a href="../../index.html"><h1 class="header-title-text">Weather Journal</h1></a>
+      </div>
+    </header>
+    <div id='weather-container' class="weather-container"> 
+      <div class="weather-location">
+        <div class="weather-location-content">
+          <div class="weather-location-content-info">
+            <h1 id='weather-city-name'></h1>
+          </div>
+        </div>
+        <div class="weather-location-draw-container">
+          <div class="weather-location-draw-info-container">
+            <div class="weather-location-draw-info-content">
+              <h1 id="weather-temperature-text"></h1>
+              <h1 id="weather-status-text"></h1>
+              <h1 id="weather-wind-text"></h1>
+              <h1 id="weather-cloud-text"></h1>
+            </div>
+          </div>
+        </div>
+        <div class="form-container">
+          <div class="search-input-container">
+            <input id="zip" class="weather-search-input" type="textbox" placeholder="Type your ZipCode"></input>
+            <button id="generate">GENERATE</button>
+          </div>
+          <textarea id="feelings" class="weather-area-input" placeholder="How are you feeling?"></textarea>
+        </div>
+      </div>
+      <div class="weather-information-container">
+        <div class="weather-information-box">
+          <div class="weather-information-content">  
+            <h1>Information: </h1>
+            <div id="entryHolder" class="information-area">
+              <div id='date' class="information-column"></div>
+              <div id='temp' class="information-column"></div>
+              <div id='content' class="information-column"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
