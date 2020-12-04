@@ -1,9 +1,8 @@
 const SERVER_ROOT='http://localhost:3000';
 
-const generateWeather=(city)=>{
+const generateWeather=(WEATHER_KEY,city)=>{
     const date = new Date();
-    // const date = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
-    return fetch(`${SERVER_ROOT}/getWeather?`+new URLSearchParams({city}),{
+    return fetch(`${SERVER_ROOT}/getWeather?`+new URLSearchParams({city,WEATHER_KEY}),{
         method:"GET",
         headers:{
             "content-type":"application/json",
